@@ -15,3 +15,26 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+/* Intro */
+
+/* About */
+
+/* Tech Stacks */
+.tech-stack-card {
+
+}
+
+.skill-card {
+  @apply border rounded-lg p-2 m-2
+}
+
+/* Footer */
+
+.footer-social-header {
+  @apply text-3xl font-bold;
+}
+
+.footer-social-links {
+  @apply text-xl pt-6;
+}
