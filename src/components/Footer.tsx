@@ -2,7 +2,7 @@ import React from 'react';
 import {
   FOOTER_TRADEMARK_SYMBOL,
   FOOTER_TRADEMARK_TEXT,
-} from '@/app/utils/constants';
+} from '@/utils/constants';
 
 export default function Footer() {
   const currentDate = new Date().getFullYear();

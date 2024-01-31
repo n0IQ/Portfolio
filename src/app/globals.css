@@ -22,11 +22,11 @@
 
 /* Tech Stacks */
 .tech-stack-card {
-
+  @apply text-center mt-3 text-xl;
 }
 
 .skill-card {
-  @apply border rounded-lg p-2 m-2
+  @apply border rounded-lg p-2 m-2 text-sm;
 }
 
 /* Footer */
