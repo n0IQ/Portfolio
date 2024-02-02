@@ -22,8 +22,11 @@ const frameworks: TechstackCardInterface = {
   skills: [
     'React.js',
     'Next.js',
-    'Tailwind',
+    'Tailwind CSS',
     'Spring / Springboot',
+    // 'J2EE',
+    'JDBC',
+    'Hibernate / JPA',
     'Node.js',
     'Express.js',
   ],
@@ -36,10 +39,18 @@ const database: TechstackCardInterface = {
 
 const tools: TechstackCardInterface = {
   stackType: 'Tools',
-  skills: ['Git', 'Github', 'AWS', 'Cucumber.js'],
+  skills: [
+    'Git',
+    'Github',
+    'Bitbucket',
+    'AWS',
+    'Gherkin',
+    'Cucumber.js',
+    'selenium-webdriver-js',
+  ],
 };
 
-export const techStackCards: TechstackCardInterface[] = [
+export const techStacks: TechstackCardInterface[] = [
   languages,
   frameworks,
   database,
