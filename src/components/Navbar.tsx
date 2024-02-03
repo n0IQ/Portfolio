@@ -21,13 +21,8 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="/coding-profiles">
-              <span>Coding Profiles</span>
-            </a>
-          </li>
-          <li>
-            <a href="/accomplishments">
-              <span>Accomplishments</span>
+            <a href="#footer">
+              <span>Contact</span>
             </a>
           </li>
         </ul>

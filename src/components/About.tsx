@@ -1,12 +1,12 @@
 export default function About() {
   return (
     <div className="mt-32 max-w-6xl mx-auto">
-      <h3 className="text-center text-3xl font-subHeading-800 font-bold">
+      <h3 className="text-secondary text-center text-3xl font-subHeading-800 font-bold">
         About Me
       </h3>
 
       <div className="mt-12">
-        <p className="font-content">
+        <p className="font-content text-contents">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum nunc
           aliquet bibendum enim facilisis gravida neque convallis a. Vestibulum
