@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Intro from '@/components/Intro';
-import About from '@/components/About';
-import TeckStack from '@/components/TechStack';
+import Navbar from '../components/Home/Navbar';
+import Intro from '@/components/Home/Intro';
+import About from '@/components/Home/About';
+import TeckStack from '@/components/Home/TechStack';
 
 export default function Home() {
   return (

@@ -8,9 +8,9 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import { faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import CodeforcesLogo from '../../public/images/codeforces_logo.png';
-import CodechefLogo from '../../public/images/codechef_logo.png';
-import LeetcodeLogo from '../../public/images/leetcode_logo.png';
+import CodeforcesLogo from '../../../public/images/codeforces_logo.png';
+import CodechefLogo from '../../../public/images/codechef_logo.png';
+import LeetcodeLogo from '../../../public/images/leetcode_logo.png';
 
 library.add(fab, faLinkedinIn, faGithub, faTwitter, faFile, faEnvelope);
 
