@@ -1,4 +1,4 @@
-import WorkExperienceCard from '@/components/WorkExperienceCard';
+import WorkExperienceCard from '@/components/Work/WorkExperienceCard';
 import {
   WorkExperienceInterface,
   workExperiences,

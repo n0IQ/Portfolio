@@ -1,7 +1,7 @@
 import { WorkExperienceInterface } from '@/interfaces/workExperienceInterface';
-import AppFireLightLogo from '../../public/images/appfire_logo_light.png';
-import AppFireDarkLogo from '../../public/images/appfire_logo_dark.png';
-import TechCuratorsDarkLogo from '../../public/images/techcurators_logo.png';
+import AppFireLightLogo from '../../../public/images/appfire_logo_light.png';
+import AppFireDarkLogo from '../../../public/images/appfire_logo_dark.png';
+import TechCuratorsDarkLogo from '../../../public/images/techcurators_logo.png';
 
 export default function WorkExperienceCard({
   card,

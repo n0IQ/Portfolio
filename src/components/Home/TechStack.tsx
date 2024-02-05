@@ -2,7 +2,7 @@ import {
   TechstackCardInterface,
   techStacks,
 } from '@/interfaces/techstackInterface';
-import TeckStackCard from '../TechStackCard';
+import TeckStackCard from './TechStackCard';
 
 export default function TeckStack() {
   return (
