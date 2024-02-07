@@ -9,7 +9,7 @@ library.add(fab, faGithub, faYoutube, faLink);
 
 export default function BigProjectCard() {
   return (
-    <div className="mt-16 max-w-screen-md border rounded-xl overflow-hidden relative group">
+    <div className="max-w-screen-md border rounded-xl overflow-hidden relative group">
       <div>
         <Image
           src={CodeNitrixCoverImage}
