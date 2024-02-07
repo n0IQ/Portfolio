@@ -25,6 +25,10 @@ const config: Config = {
         subHeading: ['Lato'],
         content: ['Noto Sans'],
       },
+      maxWidth: {
+        bigCard: '1000px',
+        smallCard: '480px',
+      },
     },
   },
   plugins: [],

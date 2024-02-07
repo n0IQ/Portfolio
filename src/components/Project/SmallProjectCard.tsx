@@ -9,12 +9,12 @@ library.add(fab, faGithub, faYoutube, faLink);
 
 export default function BigProjectCard() {
   return (
-    <div className="max-w-md max-h-96 border rounded-xl overflow-hidden relative group">
+    <div className="max-w-smallCard max-h-96 border rounded-xl overflow-hidden relative group">
       <div>
         <Image
           src={CodeNitrixCoverImage}
           alt="codenitrix-cover-image"
-          width={1000}
+          width={480}
           height={0}
           quality={100}
         />
