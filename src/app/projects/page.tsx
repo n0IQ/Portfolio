@@ -8,6 +8,7 @@ export default function Projects() {
         My Projects
       </h1>
       <div className="flex">
+        {/* Left column */}
         <div>
           <div>
             <BigProjectCard />
@@ -24,7 +25,7 @@ export default function Projects() {
             <BigProjectCard />
           </div>
         </div>
-        {/* Right side rolumn */}
+        {/* Right rolumn */}
         <div className="ml-10">
           <div>
             <SmallProjectCard />
