@@ -1,4 +1,4 @@
-export interface ProjectInterface {
+export interface ProjectCardInterface {
   title: string;
   description: string;
   githubLink: string;
@@ -6,7 +6,7 @@ export interface ProjectInterface {
   projectLink: string;
 }
 
-export const codeNitrixProject: ProjectInterface = {
+export const codeNitrixProject: ProjectCardInterface = {
   title: 'CodeNitrix - A Coding Assessment Platform',
   description: `
   CodeNitrix is a comprehensive online coding assessment platform designed to simplify the hiring process for companies. 
@@ -19,7 +19,7 @@ export const codeNitrixProject: ProjectInterface = {
   projectLink: 'https://code-nitrix-frontend.vercel.app/',
 };
 
-export const tripBudsProject: ProjectInterface = {
+export const tripBudsProject: ProjectCardInterface = {
   title: 'TripBuds',
   description: `TripBuds is a tour booking platform that provides developers with an efficient solution for integrating tour booking 
   functionality into their applications. With TripBuds, developers can seamlessly incorporate features such as user account creation, 
@@ -31,7 +31,7 @@ export const tripBudsProject: ProjectInterface = {
   projectLink: 'https://trip-buds.vercel.app/',
 };
 
-export const instaPinProject: ProjectInterface = {
+export const instaPinProject: ProjectCardInterface = {
   title: 'InstaPin',
   description: `Welcome to InstaPin, an Image Sharing Platform! Instapin is designed to allow users 
   to share and discover images, create pins, and link them to websites. Users can log in, upload images, 
@@ -41,7 +41,7 @@ export const instaPinProject: ProjectInterface = {
   projectLink: 'https://insta-pin-frontend.vercel.app/',
 };
 
-export const urlShortenerProject: ProjectInterface = {
+export const urlShortenerProject: ProjectCardInterface = {
   title: 'URL-Shortener',
   description: `
   UrlShortener is a web application designed to efficiently shorten lengthy URLs. It generates unique, random codes for each original link, 
@@ -52,7 +52,7 @@ export const urlShortenerProject: ProjectInterface = {
   projectLink: 'https://url-shortener-five.vercel.app/',
 };
 
-export const toDoProject: ProjectInterface = {
+export const toDoProject: ProjectCardInterface = {
   title: 'ToDo-App',
   description: `This is a simple Todo application built using React, Tailwind CSS, HTML, and Firebase. It allows users to create, read, 
   update, and delete Todo items. The application uses Firebase Firestore as the database to store and retrieve the Todo data.`,
@@ -61,7 +61,7 @@ export const toDoProject: ProjectInterface = {
   projectLink: 'https://to-do-app-n0iq.vercel.app/',
 };
 
-export const cryptoTrackerProject: ProjectInterface = {
+export const cryptoTrackerProject: ProjectCardInterface = {
   title: 'Crypto Tracker',
   description: `Developed a dynamic crypto tracker application using React, enabling users to monitor real-time data for various 
   cryptocurrencies including Bitcoin. Users can easily track prices, price changes, market capitalization, and more, all in real-time.`,
@@ -70,7 +70,7 @@ export const cryptoTrackerProject: ProjectInterface = {
   projectLink: 'https://crypto-tracker-n0iq.vercel.app/',
 };
 
-export const myPortfolioProject: ProjectInterface = {
+export const myPortfolioProject: ProjectCardInterface = {
   title: 'My Portfolio',
   description: `Created a portfolio website to showcase my journey as a software engineer. This platform highlights my skills, 
   work experience, and various projects, offering insights into my professional background and accomplishments.`,
@@ -79,7 +79,7 @@ export const myPortfolioProject: ProjectInterface = {
   projectLink: '',
 };
 
-export const jsDomGameProject: ProjectInterface = {
+export const jsDomGameProject: ProjectCardInterface = {
   title: 'JS Dom Game',
   description: `Created a simple yet engaging game using HTML, CSS, and vanilla JavaScript. This two-player dice game allows users 
   to take turns rolling a die and accumulating points. Players must strategize when to hold or continue rolling, as rolling a 1 

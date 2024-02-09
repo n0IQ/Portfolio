@@ -1,5 +1,15 @@
 import BigProjectCard from '@/components/Project/BigProjectCard';
 import SmallProjectCard from '@/components/Project/SmallProjectCard';
+import {
+  codeNitrixProject,
+  cryptoTrackerProject,
+  instaPinProject,
+  jsDomGameProject,
+  myPortfolioProject,
+  toDoProject,
+  tripBudsProject,
+  urlShortenerProject,
+} from '@/interfaces/projectInterface';
 
 export default function Projects() {
   return (
@@ -11,33 +21,33 @@ export default function Projects() {
         {/* Left column */}
         <div>
           <div>
-            <BigProjectCard />
+            <BigProjectCard project={codeNitrixProject} />
           </div>
           <div className="flex gap-10">
             <div className="mt-10">
-              <SmallProjectCard />
+              <SmallProjectCard project={instaPinProject} />
             </div>
             <div className="mt-10">
-              <SmallProjectCard />
+              <SmallProjectCard project={urlShortenerProject} />
             </div>
           </div>
           <div className="mt-10">
-            <BigProjectCard />
+            <BigProjectCard project={tripBudsProject} />
           </div>
         </div>
         {/* Right rolumn */}
         <div className="ml-10">
           <div>
-            <SmallProjectCard />
+            <SmallProjectCard project={myPortfolioProject} />
           </div>
           <div className="mt-10">
-            <SmallProjectCard />
+            <SmallProjectCard project={toDoProject} />
           </div>
           <div className="mt-10">
-            <SmallProjectCard />
+            <SmallProjectCard project={jsDomGameProject} />
           </div>
           <div className="mt-10">
-            <SmallProjectCard />
+            <SmallProjectCard project={cryptoTrackerProject} />
           </div>
         </div>
       </div>
