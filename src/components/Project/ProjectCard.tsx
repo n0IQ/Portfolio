@@ -19,7 +19,7 @@ export default function ProjectCard({
     <div
       className={`${
         isBigCard ? 'max-w-bigCard' : 'max-w-smallCard'
-      } border rounded-xl overflow-hidden relative group`}
+      } bg-projectCardBg border rounded-xl overflow-hidden relative group`}
     >
       <div>
         <Image
@@ -32,9 +32,9 @@ export default function ProjectCard({
       </div>
       <div className="py-8 group-hover:block">
         <h3
-          className={`font-subHeading ${
+          className={`font-subHeading font-bold ${
             isBigCard ? 'text-2xl' : 'text-xl'
-          } px-8`}
+          } text-primary px-8`}
         >
           {project.title}
         </h3>
@@ -47,7 +47,11 @@ export default function ProjectCard({
           >
             {project.title}
           </h3>
-          <p className="text-white font-content max-w-2xl py-5">
+          <p
+            className={`text-white font-content ${
+              isBigCard ? 'text-xl max-w-4xl' : ' text-base'
+            } max-w-2xl py-5`}
+          >
             {project.description}
           </p>
           <a href="">
@@ -64,17 +68,17 @@ export default function ProjectCard({
           <hr className="mt-2" />
 
           <ul className="flex mt-5 -ml-0.5">
-            <li className="w-8 text-white mx-2">
+            <li className="project-card-link-icons">
               <a href={project.githubLink}>
                 <FontAwesomeIcon icon={['fab', 'github']} />
               </a>
             </li>
-            <li className="w-8 text-white mx-2 mt-0.5">
+            <li className="project-card-link-icons mt-0.5">
               <a href={project.youtubeLink}>
                 <FontAwesomeIcon icon={['fab', 'youtube']} />
               </a>
             </li>
-            <li className="w-8 text-white mx-2 mt-1">
+            <li className="project-card-link-icons mt-1">
               <a href={project.projectLink}>
                 <FontAwesomeIcon icon={['fas', 'link']} />
               </a>

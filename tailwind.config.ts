@@ -14,11 +14,11 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        background: 'white',
-        primary: 'black',
-        secondary: 'black',
-        contents: 'black',
-        links: 'black',
+        background: 'black',
+        primary: 'white',
+        secondary: 'white',
+        links: 'white',
+        projectCardBg: '#1d1c20',
         projectCardHoverBg: '#000000bf',
       },
       fontFamily: {

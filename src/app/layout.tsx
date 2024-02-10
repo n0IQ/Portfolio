@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-background">
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-800 to-black opacity-80 h-screen"></div>
         <Navbar />
         <main>{children}</main>
         <Footer />

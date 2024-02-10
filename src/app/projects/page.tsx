@@ -12,8 +12,8 @@ import {
 
 export default function Projects() {
   return (
-    <div className="mt-32 mx-auto max-w-screen-2xl bg-red-300">
-      <h1 className="text-4xl font-bold font-subHeading-800 mb-16">
+    <div className="mt-32 mx-auto max-w-screen-2xl">
+      <h1 className="text-5xl text-primary opacity-95 font-bold font-subHeading-800 mb-16">
         My Projects
       </h1>
       <div className="flex">
