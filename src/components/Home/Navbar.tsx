@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <div>
+    <header className="fixed w-[100%] top-0 left-0">
       <nav className="bg-[#002D62]">
         <ul className="flex justify-center gap-16 mt-16">
           <li>
@@ -27,6 +27,6 @@ export default function Navbar() {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }

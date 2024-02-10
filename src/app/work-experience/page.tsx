@@ -8,7 +8,7 @@ import { WORK_EXPERIENCE_HEADING } from '@/utils/constants';
 export default function WorkExperience() {
   return (
     <div className="mt-32 ml-64">
-      <h1 className="text-4xl font-bold font-subHeading-800">
+      <h1 className="text-5xl text-primary opacity-95 font-bold font-subHeading-800">
         {WORK_EXPERIENCE_HEADING}
       </h1>
       <div className="mt-10">

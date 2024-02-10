@@ -17,6 +17,7 @@ const config: Config = {
         background: 'black',
         primary: 'white',
         secondary: 'white',
+        contents: 'white',
         links: 'white',
         projectCardBg: '#1d1c20',
         projectCardHoverBg: '#000000bf',

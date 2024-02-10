@@ -24,12 +24,22 @@
 
 /* Tech Stacks */
 .tech-stack-card {
-  @apply text-center mt-3 text-xl;
+  @apply font-subHeading font-bold text-primary text-center mt-3 text-xl;
 }
 
 .skill-card {
-  @apply border rounded-lg p-2 m-2 text-sm;
+  @apply border rounded-lg p-2 m-2 text-sm text-primary font-content bg-black;
 }
+
+/* Work Experience */
+
+/* Project Card */
+.project-card-link-icons {
+  @apply w-8 text-white  mx-2 transform hover:scale-125 duration-300;
+}
+
+/* Project Display Section */
+
 
 /* Footer */
 
@@ -41,11 +51,6 @@
   @apply text-xl pt-6 font-content hover:cursor-pointer;
 }
 
-/* Work Experience */
-
-/* Project Card */
-.project-card-link-icons {
-  @apply w-8 text-white  mx-2 transform hover:scale-125 duration-300;
+.footer-social-links-text {
+  @apply hover:scale-105 hover:text-[#00FFFF]
 }
-
-/* Project Display Section */

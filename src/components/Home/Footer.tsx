@@ -41,7 +41,9 @@ export default function Footer() {
           </li>
           <li className="footer-social-links">
             <a href={LINKEDIN_URL} target="_blank" className="flex">
-              <span className="text-contents">LinkedIn</span>
+              <span className="text-contents footer-social-links-text">
+                LinkedIn
+              </span>
               <FontAwesomeIcon
                 icon={['fab', 'linkedin-in']}
                 className="w-5 ml-2 text-contents"
@@ -50,7 +52,9 @@ export default function Footer() {
           </li>
           <li className="footer-social-links">
             <a href={GITHUB_URL} target="_blank" className="flex">
-              <span className="text-contents">Github</span>
+              <span className="text-contents footer-social-links-text">
+                Github
+              </span>
               <FontAwesomeIcon
                 icon={['fab', 'github']}
                 className="w-5 ml-2 text-contents"
@@ -59,7 +63,9 @@ export default function Footer() {
           </li>
           <li className="footer-social-links">
             <a href={TWITTER_URL} target="_blank" className="flex">
-              <span className="text-contents">Twitter</span>
+              <span className="text-contents footer-social-links-text">
+                Twitter
+              </span>
               <FontAwesomeIcon
                 icon={['fab', 'twitter']}
                 className="w-5 ml-2 text-contents"
@@ -68,7 +74,9 @@ export default function Footer() {
           </li>
           <li className="footer-social-links">
             <a href="" target="_blank" className="flex">
-              <span className="text-contents">Resume</span>
+              <span className="text-contents footer-social-links-text">
+                Resume
+              </span>
               <FontAwesomeIcon
                 icon={['fas', 'file']}
                 className="w-4 ml-2 text-contents"
@@ -87,7 +95,9 @@ export default function Footer() {
               target="_blank"
               className="flex"
             >
-              <span className="text-contents">Codeforces</span>
+              <span className="text-contents footer-social-links-text">
+                Codeforces
+              </span>
               <img
                 src={CodeforcesLogo.src}
                 alt="codeforces-logo"
@@ -101,7 +111,9 @@ export default function Footer() {
               target="_blank"
               className="flex"
             >
-              <span className="text-contents">Codechef</span>
+              <span className="text-contents footer-social-links-text">
+                Codechef
+              </span>
               <img src={CodechefLogo.src} className="ml-2 size-8 bg-gray-300" />
               {/* Codechef icon by Icons8 */}
             </a>
@@ -112,7 +124,9 @@ export default function Footer() {
               target="_blank"
               className="flex"
             >
-              <span className="text-contents">Leetcode</span>
+              <span className="text-contents footer-social-links-text">
+                Leetcode
+              </span>
               <img
                 src={LeetcodeLogo.src}
                 alt="leetcode-logo"
@@ -132,7 +146,9 @@ export default function Footer() {
               target="_blank"
               className="flex"
             >
-              <span className="text-contents">Mail</span>
+              <span className="text-contents footer-social-links-text">
+                Mail
+              </span>
               <FontAwesomeIcon
                 icon={['fas', 'envelope']}
                 className="w-5 ml-2 text-contents"

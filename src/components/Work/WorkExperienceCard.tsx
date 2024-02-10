@@ -9,13 +9,13 @@ export default function WorkExperienceCard({
   card: WorkExperienceInterface;
 }) {
   return (
-    <div className="flex border-2 mb-16 border-slate-200 rounded-xl p-5 max-w-screen-xl transition-transform ease-in-out delay-150 hover:scale-105 duration-300">
+    <div className="flex border-2 mb-16 border-slate-200 hover:border-orange-600 bg-black bg-opacity-80 opacity-95 rounded-xl p-5 max-w-screen-xl transition-transform ease-in-out delay-150 hover:scale-105 duration-300">
       <div className="flex items-center">
         <a href={card.link} target="_blank">
           <img
             src={
               card.companyName === 'Appfire'
-                ? AppFireDarkLogo.src
+                ? AppFireLightLogo.src
                 : TechCuratorsDarkLogo.src
             }
             alt={`${card.companyName}-logo`}
@@ -24,18 +24,21 @@ export default function WorkExperienceCard({
         </a>
       </div>
       <div className="ml-12">
-        <h2 className="font-subHeading-800 text-2xl text-slate-900">
+        <h2 className="font-subHeading-800 text-2xl text-primary opacity-95 font-bold">
           {card.companyName}
         </h2>
-        <h5 className="font-subHeading-800 text-base text-slate-700">
+        <h5 className="font-subHeading-800 text-base text-slate-300">
           {card.role}
         </h5>
-        <h5 className="font-content text-xs text-slate-700">{card.timeline}</h5>
+        <h5 className="font-content text-xs text-slate-200">{card.timeline}</h5>
         <ul className="list-disc pt-2 pl-6 max-w-4xl">
-          {card.work.map((work: string, index: number) => {
+          {card.description.map((descriptionItem: string, index: number) => {
             return (
-              <li key={index} className="font-content text-base text-slate-700">
-                {work}
+              <li
+                key={index}
+                className="font-content text-base text-primary opacity-95"
+              >
+                {descriptionItem}
               </li>
             );
           })}
