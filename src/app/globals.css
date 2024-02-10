@@ -40,3 +40,16 @@
 .footer-social-links {
   @apply text-xl pt-6 font-content hover:cursor-pointer;
 }
+
+/* Work Experience */
+
+/* Project Card */
+.big-project-card-container {
+
+}
+
+.small-project-card-container {
+
+}
+
+/* Project Display Section */

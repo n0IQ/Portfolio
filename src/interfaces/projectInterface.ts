@@ -42,11 +42,10 @@ export const instaPinProject: ProjectCardInterface = {
 };
 
 export const urlShortenerProject: ProjectCardInterface = {
-  title: 'URL-Shortener',
+  title: 'URL Shortener',
   description: `
-  UrlShortener is a web application designed to efficiently shorten lengthy URLs. It generates unique, random codes for each original link, 
-  creating corresponding short URLs. Users can easily input their long URLs and receive shortened versions, optimizing their sharing 
-  experience. Each short URL seamlessly redirects to its original counterpart, ensuring smooth navigation. Simplify your links with UrlShortener.`,
+  Url Shortener is a web application designed to efficiently shorten lengthy URLs. It generates unique, random codes for each original link, 
+  creating corresponding short URLs, which seamlessly redirects to its original counterpart.`,
   githubLink: 'https://github.com/n0IQ/URL-Shortener',
   youtubeLink: '',
   projectLink: 'https://url-shortener-five.vercel.app/',
@@ -54,7 +53,7 @@ export const urlShortenerProject: ProjectCardInterface = {
 
 export const toDoProject: ProjectCardInterface = {
   title: 'ToDo-App',
-  description: `This is a simple Todo application built using React, Tailwind CSS, HTML, and Firebase. It allows users to create, read, 
+  description: `A simple yet stylee Todo application built using React, Tailwind CSS, HTML, and Firebase. It allows users to create, read, 
   update, and delete Todo items. The application uses Firebase Firestore as the database to store and retrieve the Todo data.`,
   githubLink: 'https://github.com/n0IQ/ToDo-App',
   youtubeLink: '',
@@ -82,8 +81,8 @@ export const myPortfolioProject: ProjectCardInterface = {
 export const jsDomGameProject: ProjectCardInterface = {
   title: 'JS Dom Game',
   description: `Created a simple yet engaging game using HTML, CSS, and vanilla JavaScript. This two-player dice game allows users 
-  to take turns rolling a die and accumulating points. Players must strategize when to hold or continue rolling, as rolling a 1 
-  resets their round score. The game ends when one player reaches 100 points.`,
+  to take turns rolling a die and accumulate points. Players must strategize, as rolling a 1 
+  resets their round score. `,
   githubLink: 'https://github.com/n0IQ/JS-DOM-Game',
   youtubeLink: '',
   projectLink: 'https://js-dom-game.vercel.app/',

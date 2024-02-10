@@ -1,5 +1,4 @@
-import BigProjectCard from '@/components/Project/BigProjectCard';
-import SmallProjectCard from '@/components/Project/SmallProjectCard';
+import ProjectCard from '@/components/Project/ProjectCard';
 import {
   codeNitrixProject,
   cryptoTrackerProject,
@@ -21,33 +20,33 @@ export default function Projects() {
         {/* Left column */}
         <div>
           <div>
-            <BigProjectCard project={codeNitrixProject} />
+            <ProjectCard project={codeNitrixProject} isBigCard={true} />
           </div>
           <div className="flex gap-10">
             <div className="mt-10">
-              <SmallProjectCard project={instaPinProject} />
+              <ProjectCard project={instaPinProject} isBigCard={false} />
             </div>
             <div className="mt-10">
-              <SmallProjectCard project={urlShortenerProject} />
+              <ProjectCard project={urlShortenerProject} isBigCard={false} />
             </div>
           </div>
           <div className="mt-10">
-            <BigProjectCard project={tripBudsProject} />
+            <ProjectCard project={tripBudsProject} isBigCard={true} />
           </div>
         </div>
         {/* Right rolumn */}
         <div className="ml-10">
           <div>
-            <SmallProjectCard project={myPortfolioProject} />
+            <ProjectCard project={myPortfolioProject} isBigCard={false} />
           </div>
           <div className="mt-10">
-            <SmallProjectCard project={toDoProject} />
+            <ProjectCard project={toDoProject} isBigCard={false} />
           </div>
           <div className="mt-10">
-            <SmallProjectCard project={jsDomGameProject} />
+            <ProjectCard project={jsDomGameProject} isBigCard={false} />
           </div>
           <div className="mt-10">
-            <SmallProjectCard project={cryptoTrackerProject} />
+            <ProjectCard project={cryptoTrackerProject} isBigCard={false} />
           </div>
         </div>
       </div>

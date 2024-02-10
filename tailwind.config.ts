@@ -19,6 +19,7 @@ const config: Config = {
         secondary: 'black',
         contents: 'black',
         links: 'black',
+        projectCardHoverBg: '#000000bf',
       },
       fontFamily: {
         title: ['Playfair Display'],
