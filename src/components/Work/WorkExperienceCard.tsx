@@ -2,6 +2,7 @@ import { WorkExperienceInterface } from '@/interfaces/workExperienceInterface';
 import AppFireLightLogo from '../../../public/images/appfire_logo_light.png';
 import AppFireDarkLogo from '../../../public/images/appfire_logo_dark.png';
 import TechCuratorsDarkLogo from '../../../public/images/techcurators_logo.png';
+import Image from 'next/image';
 
 export default function WorkExperienceCard({
   card,
@@ -12,14 +13,16 @@ export default function WorkExperienceCard({
     <div className="flex border-2 mb-16 border-slate-200 hover:border-orange-600 bg-black bg-opacity-80 opacity-95 rounded-xl p-5 max-w-screen-xl transition-transform ease-in-out delay-150 hover:scale-105 duration-300">
       <div className="flex items-center">
         <a href={card.link} target="_blank">
-          <img
+          <Image
             src={
               card.companyName === 'Appfire'
-                ? AppFireLightLogo.src
-                : TechCuratorsDarkLogo.src
+                ? AppFireLightLogo
+                : TechCuratorsDarkLogo
             }
+            width={208}
+            height={100}
             alt={`${card.companyName}-logo`}
-            className="w-52 ml-2 hover:cursor-pointer"
+            className="ml-2 hover:cursor-pointer"
           />
         </a>
       </div>

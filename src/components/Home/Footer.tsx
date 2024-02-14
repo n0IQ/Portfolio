@@ -22,6 +22,7 @@ import {
   LINKEDIN_URL,
   TWITTER_URL,
 } from '@/utils/constants';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentDate = new Date().getFullYear();
@@ -98,10 +99,12 @@ export default function Footer() {
               <span className="text-contents footer-social-links-text">
                 Codeforces
               </span>
-              <img
+              <Image
                 src={CodeforcesLogo.src}
+                width={20}
+                height={100}
                 alt="codeforces-logo"
-                className="wl-5 ml-2"
+                className="ml-2"
               />
             </a>
           </li>
@@ -114,7 +117,13 @@ export default function Footer() {
               <span className="text-contents footer-social-links-text">
                 Codechef
               </span>
-              <img src={CodechefLogo.src} className="ml-2 size-8 bg-gray-300" />
+              <Image
+                src={CodechefLogo.src}
+                width={32}
+                height={32}
+                alt="codechef-logo"
+                className="ml-2 size-8 bg-gray-300"
+              />
               {/* Codechef icon by Icons8 */}
             </a>
           </li>
@@ -127,8 +136,10 @@ export default function Footer() {
               <span className="text-contents footer-social-links-text">
                 Leetcode
               </span>
-              <img
+              <Image
                 src={LeetcodeLogo.src}
+                width={30}
+                height={20}
                 alt="leetcode-logo"
                 className="ml-2 bg-white"
               />
