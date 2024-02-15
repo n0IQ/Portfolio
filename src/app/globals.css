@@ -18,6 +18,27 @@
   }
 }
 
+/* Navbar */
+.default-nav {
+  @apply fixed top-0 left-0 w-full z-10 text-lg transition-transform duration-500 ease-in-out;
+}
+
+.fixed-nav {
+  @apply mt-10;
+}
+
+.hide-nav {
+  @apply -translate-y-full transition-transform duration-500 ease-in-out;
+}
+
+.show-nav {
+  @apply text-base bg-gray-900 translate-y-0;
+}
+
+.active-nav {
+  @apply border rounded-full
+}
+
 /* Intro */
 
 /* About */

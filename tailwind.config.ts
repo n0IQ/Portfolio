@@ -19,6 +19,7 @@ const config: Config = {
         secondary: 'white',
         contents: 'white',
         links: 'white',
+        navLinks: '#00FFFF',
         projectCardBg: '#1d1c20',
         projectCardHoverBg: '#000000bf',
       },
