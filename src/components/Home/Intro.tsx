@@ -1,6 +1,6 @@
 export default function Intro() {
   return (
-    <div className="text-center mt-48">
+    <div className="text-center mt-64">
       <h1 className="text-8xl font-title-900 font-bold text-primary opacity-95">{`Hi. I'm Mohit Varma`}</h1>
       <h1 className="text-7xl font-title-900 font-bold text-primary opacity-95">
         A Software Engineer

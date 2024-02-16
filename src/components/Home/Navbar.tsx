@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { NavInterface, navLinks } from '@/interfaces/navInterface';
+import { NAV_FIXED_THRESHOLD, NAV_SHOW_THRESHOD } from '@/utils/constants';
 
 export default function Navbar() {
   const [windowScrollY, setWindowScrollY] = useState(0);
@@ -28,9 +29,9 @@ export default function Navbar() {
   return (
     <header
       className={`default-nav ${
-        windowScrollY < 45
+        windowScrollY < NAV_FIXED_THRESHOLD
           ? 'fixed-nav'
-          : windowScrollY < 475
+          : windowScrollY < NAV_SHOW_THRESHOD
           ? 'hide-nav'
           : 'show-nav'
       }`}
@@ -46,7 +47,7 @@ export default function Navbar() {
                 <span
                   className={
                     currentPage === navPage.url.split('/')[1]
-                      ? windowScrollY < 45
+                      ? windowScrollY < NAV_FIXED_THRESHOLD
                         ? 'border rounded-full px-5 py-2'
                         : 'border rounded-full px-3 py-2'
                       : ''
