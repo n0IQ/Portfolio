@@ -24,7 +24,7 @@ const config: Config = {
         projectCardHoverBg: '#000000bf',
       },
       fontFamily: {
-        title: ['Playfair Display'],
+        heading: ['Playfair Display'],
         subHeading: ['Lato'],
         content: ['Noto Sans'],
       },
