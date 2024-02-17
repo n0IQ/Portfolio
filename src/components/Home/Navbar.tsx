@@ -37,7 +37,7 @@ export default function Navbar() {
       }`}
     >
       <nav>
-        <ul className="flex justify-center gap-16 p-5">
+        <ul className="flex justify-center gap-10 p-5">
           {navLinks.map((navPage: NavInterface) => (
             <li
               className="text-navLinks opacity-95 font-subHeading"
@@ -45,13 +45,15 @@ export default function Navbar() {
             >
               <a href={navPage.url}>
                 <span
-                  className={
+                  className={` hover:text-white
+                  ${
                     currentPage === navPage.url.split('/')[1]
                       ? windowScrollY < NAV_FIXED_THRESHOLD
                         ? 'border rounded-full px-5 py-2'
                         : 'border rounded-full px-3 py-2'
                       : ''
                   }
+                      `}
                 >
                   {navPage.name}
                 </span>
