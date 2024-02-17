@@ -59,8 +59,10 @@
   @apply w-8 text-white  mx-2 transform hover:scale-125 duration-300;
 }
 
-/* Project Display Section */
-
+/* Project View Section */
+.project-view-source-text {
+  @apply text-contents opacity-85 font-content font-normal  hover:text-yellow-500 hover:opacity-95;
+}
 
 /* Footer */
 

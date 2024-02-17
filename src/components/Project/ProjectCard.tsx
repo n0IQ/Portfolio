@@ -52,9 +52,9 @@ export default function ProjectCard({
               isBigCard ? 'text-xl max-w-4xl' : ' text-base'
             } max-w-2xl py-5`}
           >
-            {project.description}
+            {project.coverDescription}
           </p>
-          <a href="">
+          <a href={`/projects/${project.id}`}>
             <p
               className={`text-white font-subHeading font-bold ${
                 isBigCard
