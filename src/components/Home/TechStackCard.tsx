@@ -1,4 +1,7 @@
-import { TechstackCardInterface } from '@/interfaces/techstackInterface';
+import {
+  TechstackCardInterface,
+  skillBorderColors,
+} from '@/interfaces/techstackInterface';
 
 export default function TeckStackCard({
   card,
@@ -11,7 +14,10 @@ export default function TeckStackCard({
         <h4 className="tech-stack-card">{card.stackType}</h4>
         <div className="flex flex-wrap mt-4">
           {card.skills.map((skill: string, index: number) => (
-            <div key={index} className="skill-card">
+            <div
+              key={index}
+              className={`skill-card ${skillBorderColors[skill]}`}
+            >
               {skill}
             </div>
           ))}

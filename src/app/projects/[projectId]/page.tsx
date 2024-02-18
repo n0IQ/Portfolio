@@ -28,7 +28,7 @@ export default function ProjectView({
         </div>
 
         <div className="col-span-1 flex flex-col justify-end">
-          <div className="flex gap-32">
+          <div className="flex gap-24">
             <div className="">
               <hr className="w-40 text-white opacity-95" />
               <h3 className="text-white opacity-95 font-subHeading font-medium text-xl mt-5">
@@ -62,7 +62,7 @@ export default function ProjectView({
               <h3 className="text-white opacity-95 font-subHeading font-medium text-xl mt-5">
                 Technologies
               </h3>
-              <div className="text-contents opacity-85 font-content font-normal mt-1">
+              <div className="text-contents opacity-85 font-content font-normal mt-1 max-w-72">
                 {project.technologies}
               </div>
             </div>

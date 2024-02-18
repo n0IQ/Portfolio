@@ -49,7 +49,7 @@
 }
 
 .skill-card {
-  @apply border rounded-lg p-2 m-2 text-sm text-primary font-content bg-black;
+  @apply border rounded-lg p-2 m-2 text-sm text-primary font-content font-normal bg-black;
 }
 
 /* Work Experience */
