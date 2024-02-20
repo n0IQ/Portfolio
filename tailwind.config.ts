@@ -27,6 +27,8 @@ const config: Config = {
         heading: ['Playfair Display'],
         subHeading: ['Lato'],
         content: ['Noto Sans'],
+        secondaryContent: ['Roboto Mono', 'monospace'],
+        secondaryHeading: ['Poppins', 'sans-serif'],
       },
       maxWidth: {
         bigCard: '1000px',
