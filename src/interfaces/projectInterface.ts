@@ -7,6 +7,7 @@ export interface ProjectCardInterface {
   youtubeLink: string;
   projectLink: string;
   technologies: string;
+  images: string[];
 }
 
 export const codeNitrixProject: ProjectCardInterface = {
@@ -28,6 +29,12 @@ export const codeNitrixProject: ProjectCardInterface = {
   projectLink: 'https://code-nitrix-frontend.vercel.app/',
   technologies:
     'React, JavaScript, Node.js, Express.js, MongoDB, HTML, CSS, SCSS',
+  images: [
+    '/images/codenitrix_cover.png',
+    '/images/codenitrix_1.png',
+    '/images/codenitrix_2.png',
+    '/images/codenitrix_3.png',
+  ],
 };
 
 export const tripBudsProject: ProjectCardInterface = {
@@ -47,6 +54,7 @@ export const tripBudsProject: ProjectCardInterface = {
   youtubeLink: '',
   projectLink: 'https://trip-buds.vercel.app/',
   technologies: 'JavaScript, Node.js, Express.js, MongoDB, CSS, Pug',
+  images: ['/images/codenitrix_cover.png'], // TODO: change image
 };
 
 export const instaPinProject: ProjectCardInterface = {
@@ -63,6 +71,11 @@ export const instaPinProject: ProjectCardInterface = {
   youtubeLink: '',
   projectLink: 'https://insta-pin-frontend.vercel.app/',
   technologies: 'React, JavaScript, Node.js, Express.js, MongoDB, GraphQL',
+  images: [
+    '/images/instapin_cover.png',
+    '/images/instapin_1.png',
+    '/images/instapin_2.png',
+  ],
 };
 
 export const urlShortenerProject: ProjectCardInterface = {
@@ -78,6 +91,7 @@ export const urlShortenerProject: ProjectCardInterface = {
   youtubeLink: '',
   projectLink: 'https://url-shortener-five.vercel.app/',
   technologies: 'React, JavaScript, Node.js, Express.js, MongoDB',
+  images: ['/images/url_shortener_cover.png'],
 };
 
 export const toDoProject: ProjectCardInterface = {
@@ -91,6 +105,7 @@ export const toDoProject: ProjectCardInterface = {
   youtubeLink: '',
   projectLink: 'https://to-do-app-n0iq.vercel.app/',
   technologies: 'React, JavaScript, Firebase, HTML, Tailwind CSS',
+  images: ['/images/todo_cover.png'],
 };
 
 export const cryptoTrackerProject: ProjectCardInterface = {
@@ -106,6 +121,7 @@ export const cryptoTrackerProject: ProjectCardInterface = {
   youtubeLink: '',
   projectLink: 'https://crypto-tracker-n0iq.vercel.app/',
   technologies: 'React, JavaScript, HTML, CSS',
+  images: ['/images/crypto_tracker_cover.png'],
 };
 
 export const myPortfolioProject: ProjectCardInterface = {
@@ -121,6 +137,7 @@ export const myPortfolioProject: ProjectCardInterface = {
   youtubeLink: '',
   projectLink: '',
   technologies: 'Next.js, TypeScript, Tailwind CSS',
+  images: ['/images/my_portfolio_cover.png'],
 };
 
 export const jsDomGameProject: ProjectCardInterface = {
@@ -136,6 +153,7 @@ export const jsDomGameProject: ProjectCardInterface = {
   youtubeLink: '',
   projectLink: 'https://js-dom-game.vercel.app/',
   technologies: 'JavaScript, HTML, CSS',
+  images: ['/images/js_dom_game_cover.png'],
 };
 
 export const projects: ProjectCardInterface[] = [
