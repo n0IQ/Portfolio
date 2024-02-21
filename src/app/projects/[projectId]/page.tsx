@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ProjectPagination from '@/components/Project/ProjectPagination';
+import NotFound from '@/app/not-found/page';
 
 library.add(fab, faGithub, faYoutube);
 
@@ -14,13 +15,20 @@ export default function ProjectView({
     projectId: string;
   };
 }) {
+  if (
+    parseInt(params.projectId) < 1 ||
+    parseInt(params.projectId) > projects.length
+  ) {
+    return <NotFound />;
+  }
+
   const project = projects[parseInt(params.projectId) - 1];
 
   return (
     <div>
       {/* Project Pagination */}
       <div className=" fixed bottom-10 right-20 z-10">
-        <ProjectPagination projectId={params.projectId} />
+        <ProjectPagination projectId={parseInt(params.projectId) - 1} />
       </div>
 
       <div className="mt-64 max-w-7xl mx-auto">
@@ -37,8 +45,8 @@ export default function ProjectView({
           <div className="col-span-1 flex flex-col justify-end">
             <div className="flex gap-24">
               <div className="">
-                <hr className="w-40 text-white opacity-95" />
-                <h3 className="text-white opacity-95 font-subHeading font-medium text-xl mt-5">
+                <hr className="w-40 text-primary opacity-95" />
+                <h3 className="text-primary opacity-95 font-subHeading font-medium text-xl mt-5">
                   Source
                 </h3>
                 <div className="flex mt-1">
@@ -46,29 +54,29 @@ export default function ProjectView({
                     href={project.youtubeLink}
                     className="transform duration-300 hover:scale-105"
                   >
-                    <span className="project-view-source-text">Youtube, </span>
+                    <p className="project-view-source-text">Youtube, </p>
                     <FontAwesomeIcon
                       icon={['fab', 'youtube']}
-                      className="w-7 ml-5 text-contents opacity-95"
+                      size="lg"
+                      className="ml-5 text-contents opacity-95"
                     ></FontAwesomeIcon>
                   </a>
                   <a
                     href={project.githubLink}
                     className="transform duration-300 hover:scale-105"
                   >
-                    <span className="project-view-source-text ml-1">
-                      Github
-                    </span>
+                    <p className="project-view-source-text ml-1">Github</p>
                     <FontAwesomeIcon
                       icon={['fab', 'github']}
-                      className="w-6 ml-5 text-primary opacity-95"
+                      size="lg"
+                      className="ml-5 text-primary opacity-95"
                     ></FontAwesomeIcon>
                   </a>
                 </div>
               </div>
               <div>
-                <hr className="w-80 text-white opacity-95" />
-                <h3 className="text-white opacity-95 font-subHeading font-medium text-xl mt-5">
+                <hr className="w-80 text-primary opacity-95" />
+                <h3 className="text-primary opacity-95 font-subHeading font-medium text-xl mt-5">
                   Technologies
                 </h3>
                 <div className="text-contents opacity-85 font-content font-normal mt-1 max-w-72">
@@ -80,8 +88,17 @@ export default function ProjectView({
         </div>
 
         {/* images */}
-        <div className="mt-32">
-          <Image src={''} alt="" width={1280} height={100} />
+        <div className="mt-40">
+          {project.images.map((image: string, index: number) => (
+            <div className="mt-5">
+              <Image
+                src={project.images[index]}
+                alt=""
+                width={1280}
+                height={100}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
