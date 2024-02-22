@@ -90,7 +90,7 @@ export default function ProjectView({
         {/* images */}
         <div className="mt-40">
           {project.images.map((image: string, index: number) => (
-            <div className="mt-5">
+            <div className="mt-5" key={image + index}>
               <Image
                 src={project.images[index]}
                 alt=""

@@ -43,12 +43,12 @@ export default function ProjectCard({
           <h3
             className={`font-subHeading-900 ${
               isBigCard ? 'text-2xl' : 'text-xl'
-            } text-white font-bold max-w-2xl`}
+            } text-primary font-bold max-w-2xl`}
           >
             {project.title}
           </h3>
           <p
-            className={`text-white font-content ${
+            className={`text-primary font-secondaryHeading font-normal  ${
               isBigCard ? 'text-xl max-w-4xl' : ' text-base'
             } max-w-2xl py-5`}
           >
@@ -56,7 +56,7 @@ export default function ProjectCard({
           </p>
           <a href={`/projects/${project.id}`}>
             <p
-              className={`text-white font-subHeading font-bold ${
+              className={`text-primary font-subHeading font-bold ${
                 isBigCard
                   ? 'text-xl mt-12 hover:translate-x-6'
                   : 'text-lg mt-3 hover:translate-x-3'

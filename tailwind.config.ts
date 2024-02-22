@@ -34,6 +34,9 @@ const config: Config = {
         bigCard: '1000px',
         smallCard: '480px',
       },
+      height: {
+        bg: '700px',
+      },
     },
   },
   plugins: [],
