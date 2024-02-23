@@ -18,15 +18,15 @@ export default function ProjectCard({
   return (
     <div
       className={`${
-        isBigCard ? 'max-w-bigCard' : 'max-w-smallCard'
+        isBigCard ? 'max-w-bigCard' : 'max-w-smallCard h-smallCard'
       } bg-projectCardBg border rounded-xl overflow-hidden relative group`}
     >
       <div>
         <Image
-          src={CodeNitrixCoverImage}
+          src={project.images[0]}
           alt="codenitrix-cover-image"
           width={1000}
-          height={0}
+          height={350}
           quality={100}
         />
       </div>

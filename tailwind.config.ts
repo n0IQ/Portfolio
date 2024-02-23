@@ -36,6 +36,7 @@ const config: Config = {
       },
       height: {
         bg: '700px',
+        smallCard: '350px',
       },
     },
   },

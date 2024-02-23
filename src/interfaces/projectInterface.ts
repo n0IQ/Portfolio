@@ -137,7 +137,11 @@ export const myPortfolioProject: ProjectCardInterface = {
   youtubeLink: '',
   projectLink: '',
   technologies: 'Next.js, TypeScript, Tailwind CSS',
-  images: ['/images/my_portfolio_cover.png'],
+  images: [
+    '/images/my_portfolio_cover.png',
+    '/images/my_portfolio_1.png',
+    '/images/my_portfolio_2.png',
+  ],
 };
 
 export const jsDomGameProject: ProjectCardInterface = {
