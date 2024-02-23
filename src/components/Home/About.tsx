@@ -5,19 +5,17 @@ export default function About() {
         About Me
       </h3>
 
-      <div className="mt-12">
-        <p className="font-content text-contents opacity-95">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum nunc
-          aliquet bibendum enim facilisis gravida neque convallis a. Vestibulum
-          rhoncus est pellentesque elit ullamcorper. Nec ultrices dui sapien
-          eget mi proin. At varius vel pharetra vel turpis. Bibendum neque
-          egestas congue quisque egestas diam in. Pellentesque id nibh tortor id
-          aliquet lectus. Sapien eget mi proin sed libero enim sed faucibus.
-          Volutpat odio facilisis mauris sit amet massa vitae. Feugiat in ante
-          metus dictum at tempor commodo ullamcorper. Amet facilisis magna etiam
-          tempor orci eu lobortis. Dictum at tempor commodo ullamcorper a lacus
-          vestibulum. Nec ullamcorper sit amet risus nullam eget.
+      <div className="mt-16">
+        <p className="font-content text-contents opacity-95 font-normal text-xl leading-8">
+          Currently, I work as an Associate Software Engineer at Appfire, where
+          I bring forth six months of experience in software development.
+          Proficient and driven in designing, developing, and implementing
+          software applications. I have hands-on experience in Java, React,
+          JavaScript, and other technologies to write scalable, reusable, and
+          clean code. Additionally, I have built projects using the MERN stack.
+          I have a keen interest in system architecture and its internals,
+          constantly seeking to deepen my understanding and explore innovative
+          solutions.
         </p>
       </div>
     </div>

@@ -5,10 +5,9 @@ export default function Intro() {
       <h1 className="text-7xl font-heading-900 font-bold text-primary opacity-95">
         A Software Engineer
       </h1>
-      <div className="mx-auto max-w-2xl mt-20">
+      <div className="mx-auto max-w-3xl mt-20">
         <p className="text-2xl font-content text-contents opacity-95">
-          {`I'm passionate about crafting experiences that are engaging,
-          accessible, and user-centric.`}
+          {`I am a software engineer passionate about System Architecture, Distributed Datastores, and Advanced Algorithms.`}
         </p>
       </div>
     </div>
