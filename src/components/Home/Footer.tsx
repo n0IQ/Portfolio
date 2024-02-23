@@ -7,12 +7,12 @@ import {
   faGithub,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
-import { faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import CodeforcesLogo from '../../../public/images/codeforces_logo.png';
 import CodechefLogo from '../../../public/images/codechef_logo.png';
 import LeetcodeLogo from '../../../public/images/leetcode_logo.png';
 
-library.add(fab, faLinkedinIn, faGithub, faTwitter, faFile, faEnvelope);
+library.add(fab, faLinkedinIn, faGithub, faTwitter, faEnvelope);
 
 import {
   EMAIL_ADDRESS,
@@ -30,10 +30,18 @@ export default function Footer() {
   return (
     <footer id="footer" className="mt-64 grid grid-cols-5">
       <div className="col-span-3 ml-80">
-        <span className="text-contents text-xl font-conten">
+        <div className="mb-10">
+          <a href="#footer">
+            <button className="bg-blue-500 hover:bg-blue-600 text-primary font-bold font-secondaryContent text-xl py-3 px-5 rounded-md">
+              Download CV
+            </button>
+          </a>
+        </div>
+        <span className="text-contents text-xl font-content">
           {FOOTER_TRADEMARK_SYMBOL + currentDate + FOOTER_TRADEMARK_TEXT}
         </span>
       </div>
+
       <div className="col-span-2 flex gap-20">
         {/* Social links */}
         <ul>
@@ -70,17 +78,6 @@ export default function Footer() {
               <FontAwesomeIcon
                 icon={['fab', 'twitter']}
                 className="w-5 ml-2 text-contents"
-              />
-            </a>
-          </li>
-          <li className="footer-social-links">
-            <a href="" target="_blank" className="flex">
-              <span className="text-contents footer-social-links-text">
-                Resume
-              </span>
-              <FontAwesomeIcon
-                icon={['fas', 'file']}
-                className="w-4 ml-2 text-contents"
               />
             </a>
           </li>
