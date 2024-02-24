@@ -1,27 +1,25 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { NavInterface, navLinks } from '@/interfaces/navInterface';
 import { NAV_FIXED_THRESHOLD, NAV_SHOW_THRESHOD } from '@/utils/constants';
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [windowScrollY, setWindowScrollY] = useState(0);
   const [currentPage, setCurrentPage] = useState(getCurrentPage());
 
-  const handleScroll = () => {
-    setWindowScrollY(window.scrollY);
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      setWindowScrollY(window.scrollY);
+    };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    setCurrentPage(getCurrentPage());
-  }, []);
-
   function getCurrentPage() {
-    const currentPath: string = window.location.pathname;
+    const currentPath: string = pathname;
     const paths: string[] = currentPath.split('/');
     return paths[1];
   }
