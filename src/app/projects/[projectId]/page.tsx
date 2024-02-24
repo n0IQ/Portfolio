@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 import ProjectPagination from '@/components/Project/ProjectPagination';
-import NotFound from '@/app/not-found/page';
+// import NotFound from '@/app/not-found/page';
 
 library.add(fab, faGithub, faYoutube);
 
@@ -15,12 +15,12 @@ export default function ProjectView({
     projectId: string;
   };
 }) {
-  if (
-    parseInt(params.projectId) < 1 ||
-    parseInt(params.projectId) > projects.length
-  ) {
-    return <NotFound />;
-  }
+  // if (
+  //   parseInt(params.projectId) < 1 ||
+  //   parseInt(params.projectId) > projects.length
+  // ) {
+  //   return <NotFound />;
+  // }
 
   const project = projects[parseInt(params.projectId) - 1];
 
