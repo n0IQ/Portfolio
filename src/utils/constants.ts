@@ -11,5 +11,8 @@ export const TWITTER_URL = 'https://twitter.com/Mohit_Varma1';
 export const CV_URL = 'https://www.linkedin.com/in/mohitvarma122/'; // TODO: build cv≠
 export const EMAIL_ADDRESS = 'varmamohit122@gmail.com';
 
+export const CV_LINK =
+  'https://drive.google.com/file/d/1SZ7gYgZxR1XAcKUKgFXab7oT-E7M4iwg/view?usp=sharing';
+
 export const NAV_FIXED_THRESHOLD = 45;
 export const NAV_SHOW_THRESHOD = 475;

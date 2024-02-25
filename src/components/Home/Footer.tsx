@@ -15,6 +15,7 @@ import LeetcodeLogo from '../../../public/images/leetcode_logo.png';
 library.add(fab, faLinkedinIn, faGithub, faTwitter, faEnvelope);
 
 import {
+  CV_LINK,
   EMAIL_ADDRESS,
   FOOTER_TRADEMARK_SYMBOL,
   FOOTER_TRADEMARK_TEXT,
@@ -31,7 +32,7 @@ export default function Footer() {
     <footer id="footer" className="mt-64 grid grid-cols-5">
       <div className="col-span-3 ml-80">
         <div className="mb-10">
-          <a href="#footer">
+          <a href={CV_LINK} target="_blank">
             <button className="bg-blue-500 hover:bg-blue-600 text-primary font-bold font-secondaryContent text-xl py-3 px-5 rounded-md">
               Download CV
             </button>
