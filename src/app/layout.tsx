@@ -3,8 +3,8 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Home/Navbar';
 import Footer from '@/components/Home/Footer';
-
-const inter = Inter({ subsets: ['latin'] });
+import { ThemeProvider } from './theme-provider';
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 export const metadata: Metadata = {
   title: 'Mohit Varma | Full Stack Software Engineer',
@@ -19,11 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-background">
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-800 to-black opacity-80 h-bg"></div>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+      <body className={`duration-300 dark:bg-darkBackground`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeSwitcher />
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

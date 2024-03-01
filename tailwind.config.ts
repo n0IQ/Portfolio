@@ -14,12 +14,16 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        background: 'black',
+        darkBackground: '#161513',
+        darkPrimary: '#F2691D',
+        darkText: '#ffffff',
+
+        background: '#161513',
         primary: 'white',
         secondary: 'white',
         contents: 'white',
         links: 'white',
-        navLinks: '#00FFFF',
+        navLinks: '#F2691D',
         projectCardBg: '#1d1c20',
         projectCardHoverBg: '#000000bf',
       },
@@ -40,6 +44,7 @@ const config: Config = {
       },
     },
   },
+  darkMode: ['class'],
   plugins: [],
 };
 export default config;
