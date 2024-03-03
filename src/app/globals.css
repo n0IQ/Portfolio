@@ -36,7 +36,7 @@
 }
 
 .active-nav {
-  @apply border rounded-full
+  @apply border rounded-full;
 }
 
 /* Intro */
@@ -61,19 +61,23 @@
 
 /* Project View Section */
 .project-view-source-text {
-  @apply text-contents opacity-85 font-content font-normal  hover:text-yellow-500 hover:opacity-95;
+  @apply text-lightPrimary dark:text-darkPrimary font-content font-normal  hover:text-orange-500 dark:hover:text-orange-400;
 }
 
 /* Footer */
 
 .footer-social-header {
-  @apply text-3xl font-bold font-subHeading text-secondary;
+  @apply text-3xl font-semibold font-secondaryHeading text-footerPrimary;
+  
 }
-
 .footer-social-links {
-  @apply text-xl pt-6 font-content hover:cursor-pointer;
+  @apply pt-6 hover:cursor-pointer;
 }
 
 .footer-social-links-text {
-  @apply hover:scale-105 hover:text-[#00FFFF]
+  @apply text-xl text-darkPrimary dark:text-darkPrimary font-secondaryContent hover:scale-105 hover:text-footerSecondary dark:hover:text-footerSecondary;
+}
+
+.footer-icons {
+  @apply text-darkPrimary dark:text-darkPrimary;
 }
