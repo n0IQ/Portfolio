@@ -1,5 +1,5 @@
-import { projects } from '@/interfaces/projectInterface';
 import Image from 'next/image';
+import { projects } from '@/interfaces/projectInterface';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -27,17 +27,17 @@ export default function ProjectView({
   return (
     <div>
       {/* Project Pagination */}
-      <div className=" fixed bottom-10 right-20 z-10">
+      <div className="fixed bottom-10 right-20 z-10">
         <ProjectPagination projectId={parseInt(params.projectId) - 1} />
       </div>
 
       <div className="mt-64 max-w-7xl mx-auto">
         <div className="grid grid-cols-2">
           <div className="col-span-1">
-            <h1 className="text-primary opacity-95 font-heading-900 text-6xl max-w-2xl font-bold">
+            <h1 className="text-lightPrimary dark:text-darkPrimary font-heading-900 text-6xl max-w-2xl font-bold">
               {project.title}
             </h1>
-            <p className="text-primary opacity-95 font-content max-w-lg mt-20 text-lg font-medium">
+            <p className="text-lightPrimary dark:text-darkPrimary font-content max-w-lg mt-20 text-lg font-medium">
               {project.description}
             </p>
           </div>
@@ -45,8 +45,8 @@ export default function ProjectView({
           <div className="col-span-1 flex flex-col justify-end">
             <div className="flex gap-24">
               <div className="">
-                <hr className="w-40 text-primary opacity-95" />
-                <h3 className="text-primary opacity-95 font-subHeading font-medium text-xl mt-5">
+                <hr className="w-40 border-2 border-headingPrimary dark:border-headingPrimary" />
+                <h3 className="text-lightPrimary dark:text-darkPrimary font-secondaryContent font-medium text-xl mt-5">
                   Source
                 </h3>
                 <div className="flex mt-1">
@@ -58,7 +58,7 @@ export default function ProjectView({
                     <FontAwesomeIcon
                       icon={['fab', 'youtube']}
                       size="lg"
-                      className="ml-5 text-contents opacity-95"
+                      className="ml-5 text-lightPrimary dark:text-darkPrimary"
                     ></FontAwesomeIcon>
                   </a>
                   <a
@@ -69,17 +69,17 @@ export default function ProjectView({
                     <FontAwesomeIcon
                       icon={['fab', 'github']}
                       size="lg"
-                      className="ml-5 text-primary opacity-95"
+                      className="ml-5 text-lightPrimary dark:text-darkPrimary"
                     ></FontAwesomeIcon>
                   </a>
                 </div>
               </div>
               <div>
-                <hr className="w-80 text-primary opacity-95" />
-                <h3 className="text-primary opacity-95 font-subHeading font-medium text-xl mt-5">
+                <hr className="w-80 border-2 border-headingPrimary dark:border-headingPrimary" />
+                <h3 className="text-lightPrimary dark:text-darkPrimary font-secondaryContent font-medium text-xl mt-5">
                   Technologies
                 </h3>
-                <div className="text-contents opacity-85 font-content font-normal mt-1 max-w-72">
+                <div className="text-lightPrimary dark:text-darkPrimary font-content font-normal mt-1 max-w-72">
                   {project.technologies}
                 </div>
               </div>

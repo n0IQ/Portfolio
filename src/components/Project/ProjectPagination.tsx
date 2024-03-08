@@ -50,10 +50,12 @@ export default function ProjectPagination({
       </div>
 
       {/* Fixed content */}
-      <div className="w-64 bg-primary p-10 rounded-lg flex border-opacity-95">
+      <div className="w-64 bg-[#2C2C2E] dark:bg-lightBackground p-10 rounded-lg flex">
         {projectId > 0 && (
           <div className={`flex`}>
-            <p className="font-subHeading font-medium text-xl mr-5">prev</p>
+            <p className="font-secondaryContent font-normal text-xl mr-5 text-darkPrimary dark:text-lightPrimary">
+              prev
+            </p>
             <a
               href={`/projects/${projectId === 0 ? projectId + 1 : projectId}`} // 0 based indexing for projectId, dont change if its 0
               onMouseEnter={() => showPrevProjectPreview()}
@@ -61,7 +63,7 @@ export default function ProjectPagination({
             >
               <FontAwesomeIcon
                 icon={['fas', 'arrow-left']}
-                className="w-5 mt-2 mr-5"
+                className="w-5 mt-2 mr-5 text-darkPrimary dark:text-lightPrimary"
               />
             </a>
           </div>
@@ -79,23 +81,25 @@ export default function ProjectPagination({
             >
               <FontAwesomeIcon
                 icon={['fas', 'arrow-right']}
-                className="w-5 mt-2 mr-5"
+                className="w-5 mt-2 mr-5 text-darkPrimary dark:text-lightPrimary"
               />
             </a>
-            <p className="font-subHeading font-medium text-xl">next</p>
+            <p className="font-secondaryContent font-normal text-darkPrimary dark:text-lightPrimary text-xl">
+              next
+            </p>
           </div>
         )}
       </div>
 
       {/* Visible on hover */}
       <div
-        className={`w-full h-20 bg-primary -mt-5 rounded-lg pb-5 transition-opacity duration-500 ${
+        className={`w-full h-20 bg-[#2C2C2E] dark:bg-lightBackground -mt-5 rounded-lg pb-5 transition-opacity duration-500 ${
           isHovered ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <h3 className="font-secondaryHeading font-medium max-w-60 text-lg pl-10">
+        <h3 className="font-secondaryHeading font-medium text-darkPrimary dark:text-lightPrimary max-w-60 text-lg pl-10">
           {previewProject.title}
         </h3>
       </div>

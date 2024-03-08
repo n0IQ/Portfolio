@@ -4,7 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Home/Navbar';
 import Footer from '@/components/Home/Footer';
 import { ThemeProvider } from './theme-provider';
-import { ThemeSwitcher } from './ThemeSwitcher';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export const metadata: Metadata = {
   title: 'Mohit Varma | Full Stack Software Engineer',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`duration-300 dark:bg-darkBackground`}>
+      <body className="duration-300 bg-lightBackground dark:bg-darkBackground">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ThemeSwitcher />
           <Navbar />

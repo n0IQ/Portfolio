@@ -1,9 +1,8 @@
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
-import CodeNitrixCoverImage from '../../../public/images/codenitrix_cover.png';
-import Image from 'next/image';
 import { ProjectCardInterface } from '@/interfaces/projectInterface';
 
 library.add(fab, faGithub, faYoutube, faLink);
@@ -19,7 +18,7 @@ export default function ProjectCard({
     <div
       className={`${
         isBigCard ? 'max-w-bigCard' : 'max-w-smallCard h-smallCard'
-      } bg-projectCardBg border rounded-xl overflow-hidden relative group`}
+      } bg-projectCardBg border-2 border-gray-500 dark:border-white rounded-xl overflow-hidden relative group`}
     >
       <div>
         <Image
@@ -56,11 +55,11 @@ export default function ProjectCard({
           </p>
           <a href={`/projects/${project.id}`}>
             <p
-              className={`text-primary font-subHeading font-bold ${
+              className={`text-primary font-secondaryContent font-bold ${
                 isBigCard
                   ? 'text-xl mt-12 hover:translate-x-6'
                   : 'text-lg mt-3 hover:translate-x-3'
-              } transform hover:scale-105 duration-300 hover:text-yellow-500`}
+              } transform hover:scale-105 duration-300 hover:text-orange-500`}
             >
               View Project
             </p>
