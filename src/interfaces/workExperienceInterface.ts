@@ -4,6 +4,7 @@ export interface WorkExperienceInterface {
   timeline: string;
   description: string[];
   link: string;
+  image: string;
 }
 
 const appfireFTEWorkExperience: WorkExperienceInterface = {
@@ -17,6 +18,7 @@ const appfireFTEWorkExperience: WorkExperienceInterface = {
     standards.`,
   ],
   link: 'https://appfire.com/',
+  image: '/images/work/appfire_logo_dark.png',
 };
 
 const appfireInternWorkExperience: WorkExperienceInterface = {
@@ -29,6 +31,7 @@ const appfireInternWorkExperience: WorkExperienceInterface = {
     'Resolved critical bugs in a data center app, improving its stability and reliability.',
   ],
   link: 'https://appfire.com/',
+  image: '/images/work/appfire_logo_dark.png',
 };
 
 const techCuratorsWorkExperience: WorkExperienceInterface = {
@@ -40,6 +43,7 @@ const techCuratorsWorkExperience: WorkExperienceInterface = {
     'Created test cases and tested the problems against them, drafted clear and concise editorials for the users.',
   ],
   link: 'https://www.techcurators.in/',
+  image: '/images/work/techcurators_logo.png',
 };
 
 export const workExperiences: WorkExperienceInterface[] = [
