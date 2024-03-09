@@ -1,6 +1,6 @@
 // Page Headings
 export const WORK_EXPERIENCE_HEADING = 'Work Experience';
-export const PROJECTS_HEADING = 'Projects';
+export const PROJECTS_HEADING = 'My Projects';
 
 // Footer
 export const FOOTER_TRADEMARK_SYMBOL = '© ';
