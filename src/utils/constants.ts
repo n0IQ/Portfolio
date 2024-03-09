@@ -25,6 +25,6 @@ export const ABOUT_ME_HEADER = `About Me`;
 export const ABOUT_ME_SECTION_TEXT = `Currently, I work as an Associate Software Engineer at Appfire, where I bring forth six months of experience in software 
   development. Proficient and driven in designing, developing, and implementing software applications. I have hands-on experience in Java, React, 
   JavaScript, and other technologies to write scalable, reusable, and clean code. Additionally, I have built projects using the MERN stack. 
-  I have a keen interest in system architecture and its internals, constantly seeking to deepen my understanding and explore innovativesolutions.`;
+  I have a keen interest in system architecture and its internals, constantly seeking to deepen my understanding and explore innovative solutions.`;
 
 export const SKILLS_HEADER = `My Skills`;

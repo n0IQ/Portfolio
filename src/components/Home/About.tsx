@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import { ABOUT_ME_HEADER, ABOUT_ME_SECTION_TEXT } from '@/utils/constants';
+import MyImage from '../../../public/images/about/self.jpeg';
 
 export default function About() {
   return (
@@ -7,8 +9,15 @@ export default function About() {
         {ABOUT_ME_HEADER}
       </h3>
 
-      <div className="mt-16">
-        <p className="font-content font-normal text-xl leading-8 text-darkBackground dark:text-lightBackground">
+      <div className="mt-16 md:flex justify-between">
+        <Image
+          src={MyImage.src}
+          alt="my-image"
+          width={300}
+          height={1000}
+          className="rounded-md size-auto mx-auto md:mx-0 mb-10"
+        />
+        <p className="max-w-96 lg:max-w-3xl mx-auto font-content font-normal text-base lg:text-xl leading-6 lg:leading-8 text-darkBackground dark:text-lightBackground">
           {ABOUT_ME_SECTION_TEXT}
         </p>
       </div>
