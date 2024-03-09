@@ -9,7 +9,7 @@ export default function WorkExperience() {
   return (
     <div className="mt-40 flex justify-center">
       <div>
-        <h1 className="text-5xl text-lightPrimary dark:text-darkPrimary font-bold font-subHeading-800">
+        <h1 className="text-3xl text-center md:text-left lg:text-5xl text-lightPrimary dark:text-darkPrimary font-bold font-subHeading-800">
           {WORK_EXPERIENCE_HEADING}
         </h1>
         <div className="mt-10">

@@ -4,7 +4,7 @@ import MyImage from '../../../public/images/about/self.jpeg';
 
 export default function About() {
   return (
-    <div className="mt-32 max-w-6xl mx-auto">
+    <div className="mt-32 md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto">
       <h3 className="text-headingPrimary dark:text-headingPrimary text-center text-5xl font-secondaryHeading font-bold">
         {ABOUT_ME_HEADER}
       </h3>
@@ -14,10 +14,10 @@ export default function About() {
           src={MyImage.src}
           alt="my-image"
           width={300}
-          height={1000}
-          className="rounded-md size-auto mx-auto md:mx-0 mb-10"
+          height={300}
+          className="rounded-md size-auto mx-auto mb-10"
         />
-        <p className="max-w-96 lg:max-w-3xl mx-auto font-content font-normal text-base lg:text-xl leading-6 lg:leading-8 text-darkBackground dark:text-lightBackground">
+        <p className="max-w-96 md:max-w-80 lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl mx-auto md:-mt-1 lg:-mt-2 font-content font-normal text-base lg:text-xl leading-6 lg:leading-8 text-darkBackground dark:text-lightBackground">
           {ABOUT_ME_SECTION_TEXT}
         </p>
       </div>
