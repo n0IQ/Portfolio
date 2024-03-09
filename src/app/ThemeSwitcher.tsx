@@ -14,12 +14,29 @@ export default function ThemeSwitcher() {
     return null;
   }
 
+  const handleThemeChange = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
-    <button
-      className={`w-fit absolute right-5 top-2 p-2 rounded-md hover:scale-110 active:scale-100 duration-200 bg-slate-200 dark:bg-[#212933]`}
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+    <div
+      className="fixed -left-5 top-1/2 -rotate-90 flex  border rounded-full cursor-pointer bg-[#efefef]"
+      onClick={handleThemeChange}
     >
-      {theme === 'light' ? 'Dark' : 'Light'}
-    </button>
+      <div
+        className={`px-2 py-1 border rounded-full text-sm font-secondaryContent ${
+          theme === 'dark' ? 'bg-white text-lightPrimary' : 'text-gray-500'
+        }`}
+      >
+        Dark
+      </div>
+      <div
+        className={`px-2 py-1 border rounded-full text-sm font-secondaryContent
+          ${theme === 'light' ? 'bg-white text-lightPrimary' : 'text-gray-500'}
+          `}
+      >
+        Light
+      </div>
+    </div>
   );
 }
