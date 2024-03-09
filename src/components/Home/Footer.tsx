@@ -30,9 +30,9 @@ export default function Footer() {
   const currentDate = new Date().getFullYear();
 
   return (
-    <footer id="footer" className="bg-headingPrimary">
-      <div className="mt-64 grid grid-cols-6">
-        <div className="py-20 col-span-3 ml-80">
+    <footer id="footer" className="bg-headingPrimary text-center sm:text-left">
+      <div className="mt-64 grid md:grid-cols-5 lg:grid-cols-6">
+        <div className="py-20 md:col-span-2 lg:col-span-3 md:ml-10 lg:ml-80">
           <div className="mb-10">
             <a href={CV_LINK} target="_blank">
               <button className="bg-white hover:bg-gray-300 dark:bg-white dark:hover:bg-gray-100 text-orange-600 font-bold font-secondaryContent text-xl py-3 px-5 rounded-md">
@@ -45,14 +45,14 @@ export default function Footer() {
           </span>
         </div>
 
-        <div className="py-20 col-span-2 flex gap-20">
+        <div className="md:py-20 md:col-span-3 lg:col-span-2 md:flex md:gap-10 lg:gap-20">
           {/* Social links */}
-          <ul>
+          <ul className="pb-10">
             <li className="footer-social-header">
               <span>Socials</span>
             </li>
             <li className="footer-social-links">
-              <a href={LINKEDIN_URL} target="_blank" className="flex">
+              <a href={LINKEDIN_URL} target="_blank" className="lg:flex">
                 <span className="footer-social-links-text">LinkedIn</span>
                 <FontAwesomeIcon
                   icon={['fab', 'linkedin-in']}
@@ -61,7 +61,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="footer-social-links">
-              <a href={GITHUB_URL} target="_blank" className="flex">
+              <a href={GITHUB_URL} target="_blank" className="lg:flex">
                 <span className="footer-social-links-text">Github</span>
                 <FontAwesomeIcon
                   icon={['fab', 'github']}
@@ -70,7 +70,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="footer-social-links">
-              <a href={TWITTER_URL} target="_blank" className="flex">
+              <a href={TWITTER_URL} target="_blank" className="lg:flex">
                 <span className="footer-social-links-text">Twitter</span>
                 <FontAwesomeIcon
                   icon={['fab', 'twitter']}
@@ -80,7 +80,7 @@ export default function Footer() {
             </li>
           </ul>
           {/* Coding Profile Links */}
-          <ul className="col-span-2">
+          <ul className="pb-10 lg:col-span-2">
             <li className="footer-social-header">
               <span>Coding</span>
             </li>
@@ -88,7 +88,7 @@ export default function Footer() {
               <a
                 href={`mailto:${EMAIL_ADDRESS}`}
                 target="_blank"
-                className="flex"
+                className="lg:flex"
               >
                 <span className="footer-social-links-text">Codeforces</span>
                 <Image
@@ -96,7 +96,7 @@ export default function Footer() {
                   width={20}
                   height={100}
                   alt="codeforces-logo"
-                  className="ml-2"
+                  className="ml-2 inline-block"
                 />
               </a>
             </li>
@@ -104,7 +104,7 @@ export default function Footer() {
               <a
                 href={`mailto:${EMAIL_ADDRESS}`}
                 target="_blank"
-                className="flex"
+                className="lg:flex"
               >
                 <span className="footer-social-links-text">Codechef</span>
                 <Image
@@ -112,7 +112,7 @@ export default function Footer() {
                   width={32}
                   height={32}
                   alt="codechef-logo"
-                  className="ml-2 size-8 bg-gray-300"
+                  className="ml-2 size-8 bg-gray-300 inline-block"
                 />
                 {/* Codechef icon by Icons8 */}
               </a>
@@ -121,7 +121,7 @@ export default function Footer() {
               <a
                 href={`mailto:${EMAIL_ADDRESS}`}
                 target="_blank"
-                className="flex"
+                className="lg:flex"
               >
                 <span className="footer-social-links-text">Leetcode</span>
                 <Image
@@ -129,13 +129,13 @@ export default function Footer() {
                   width={30}
                   height={20}
                   alt="leetcode-logo"
-                  className="ml-2 bg-white"
+                  className="ml-2 bg-white inline-block"
                 />
               </a>
             </li>
           </ul>
           {/* Contact Me Links */}
-          <ul className="col-span-2">
+          <ul className="pb-20 lg:col-span-2">
             <li className="footer-social-header">
               <span>Contact</span>
             </li>
@@ -143,7 +143,7 @@ export default function Footer() {
               <a
                 href={`mailto:${EMAIL_ADDRESS}`}
                 target="_blank"
-                className="flex"
+                className="lg:flex"
               >
                 <span className="footer-social-links-text">Mail</span>
                 <FontAwesomeIcon
@@ -160,7 +160,7 @@ export default function Footer() {
         <div className="border-l-2 mr-10 transition-all duration-300 group-hover:h-16"></div>
       </div> */}
 
-      <FooterLines />
+      {/* <FooterLines /> */}
     </footer>
   );
 }
