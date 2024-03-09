@@ -11,11 +11,11 @@ export default function MySkill() {
         </h2>
 
         <div className="mt-16">
-          <div className="grid grid-cols-2 gap-80 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-80 mb-10 lg:mb-16">
             <SkillCard skillCard={skills[0]} />
             <SkillCard skillCard={skills[1]} />
           </div>
-          <div className="grid grid-cols-2 gap-80">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-80">
             <SkillCard skillCard={skills[2]} />
             <SkillCard skillCard={skills[3]} />
           </div>

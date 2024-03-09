@@ -31,7 +31,7 @@ export default function Footer() {
 
   return (
     <footer id="footer" className="bg-headingPrimary text-center sm:text-left">
-      <div className="mt-64 grid md:grid-cols-5 lg:grid-cols-6">
+      <div className="mt-32 lg:mt-64 grid md:grid-cols-5 lg:grid-cols-6">
         <div className="py-20 md:col-span-2 lg:col-span-3 md:ml-10 lg:ml-80">
           <div className="mb-10">
             <a href={CV_LINK} target="_blank">
