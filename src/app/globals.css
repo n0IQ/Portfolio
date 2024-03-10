@@ -56,12 +56,12 @@
 
 /* Project Card */
 .project-card-link-icons {
-  @apply w-8 text-white  mx-2 transform hover:scale-125 duration-300;
+  @apply w-5 md:w-6 lg:w-4 xl:w-6 2xl:w-8 text-white  mx-2 transform hover:scale-125 duration-300;
 }
 
 /* Project View Section */
 .project-view-source-text {
-  @apply text-lightPrimary dark:text-darkPrimary font-content font-normal  hover:text-orange-500 dark:hover:text-orange-400;
+  @apply text-lightPrimary dark:text-darkPrimary font-content font-normal text-sm lg:text-base hover:text-orange-500 dark:hover:text-orange-400;
 }
 
 /* Footer */

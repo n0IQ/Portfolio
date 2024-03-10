@@ -9,20 +9,21 @@ import {
   tripBudsProject,
   urlShortenerProject,
 } from '@/interfaces/projectInterface';
+import { PROJECTS_HEADING } from '@/utils/constants';
 
 export default function Projects() {
   return (
-    <div className="mt-40 mx-auto max-w-screen-2xl">
-      <h1 className="text-5xl text-lightPrimary dark:text-darkPrimary font-bold font-subHeading-800 mb-16">
-        My Projects
+    <div className="mt-40 xl:mx-auto lg:max-w-screen-lg xl:max-w-screen-lg 2xl:max-w-screen-2xl lg:ml-10">
+      <h1 className="text-4xl md:text-5xl text-center lg:text-left text-lightPrimary dark:text-darkPrimary font-bold font-subHeading-800 mb-16">
+        {PROJECTS_HEADING}
       </h1>
-      <div className="flex">
+      <div className="lg:flex">
         {/* Left column */}
         <div>
           <div>
             <ProjectCard project={codeNitrixProject} isBigCard={true} />
           </div>
-          <div className="flex gap-10">
+          <div className="lg:flex lg:gap-10">
             <div className="mt-10">
               <ProjectCard project={instaPinProject} isBigCard={false} />
             </div>
@@ -35,7 +36,7 @@ export default function Projects() {
           </div>
         </div>
         {/* Right rolumn */}
-        <div className="ml-10">
+        <div className="mt-10 lg:-mt-0 lg:ml-10">
           <div>
             <ProjectCard project={myPortfolioProject} isBigCard={false} />
           </div>
