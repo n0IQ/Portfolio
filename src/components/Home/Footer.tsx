@@ -40,7 +40,7 @@ export default function Footer() {
               </button>
             </a>
           </div>
-          <span className="text-darkText dark:text-darkText text-xl font-content font-medium">
+          <span className="text-lightBackground dark:text-darkPrimary text-xl font-content font-medium">
             {FOOTER_TRADEMARK_SYMBOL + currentDate + FOOTER_TRADEMARK_TEXT}
           </span>
         </div>
