@@ -20,7 +20,7 @@ export default function ThemeSwitcher() {
 
   return (
     <div
-      className="fixed -left-5 top-1/2 -rotate-90 flex  border rounded-full cursor-pointer bg-[#efefef]"
+      className="fixed -left-5 top-1/2 -rotate-90 flex  border rounded-full cursor-pointer bg-[#efefef] z-10"
       onClick={handleThemeChange}
     >
       <div
