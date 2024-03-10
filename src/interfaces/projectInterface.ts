@@ -45,11 +45,10 @@ export const tripBudsProject: ProjectCardInterface = {
   enables hassle-free payments, giving you peace of mind while you explore the world. Excitingly, you can easily track all your booked 
   tours in one place, ensuring a stress-free travel experience. Additionally, our integrated map feature allows you to visualize tour 
   locations with just a glance. Discover the wonders of the world with TripBuds – your perfect travel companion.`,
-  coverDescription: `TripBuds is a tour booking platform that provides users with an efficient solution for integrating tour booking 
-  functionality into their applications. With TripBuds, developers can seamlessly incorporate features such as user account creation, 
-  tour booking, and payment processing using Stripe's API. The platform also offers a user-friendly interface with integrated map 
-  functionality, allowing users to visualize tour locations directly within the app. By simplifying the process of integrating tour booking 
-  capabilities, TripBuds enables developers to enhance their applications and provide users with a seamless booking experience.`,
+  coverDescription: `TripBuds is a tour booking platform that offers users an efficient solution for booking tours and travel experiences. 
+  With TripBuds, users can seamlessly create an account, book tours, make hassle-free online payments, and easily access their booked tours. 
+  The platform also provides a user-friendly interface with integrated map functionality, allowing users to visualize tour locations directly 
+  within the app.`,
   githubLink: 'https://github.com/n0IQ/TripBuds',
   youtubeLink: '',
   projectLink: 'https://trip-buds.vercel.app/',
