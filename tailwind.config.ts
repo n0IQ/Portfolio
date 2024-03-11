@@ -14,18 +14,28 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        darkBackground: '#161513',
-        darkPrimary: '#F2691D',
-        darkText: '#ffffff',
-
         background: '#161513',
-        primary: 'white',
-        secondary: 'white',
-        contents: 'white',
-        links: 'white',
-        navLinks: '#F2691D',
+        headingPrimary: '#F2691D',
+        primary: '#FAF9F6',
+        contents: '#FFFFFF',
+
+        darkBackground: '#161513',
+        darkPrimary: '#FAF9F6',
+
+        lightBackground: '#FAF9F6',
+        lightPrimary: '#161513',
+
+        iconHover: '#00FFFF',
+        footerPrimary: '#fcc809',
+        footerSecondary: '#fcd9b1',
+
+        links: '#FFFFFF',
+        navLinks: '#00FFFF',
         projectCardBg: '#1d1c20',
         projectCardHoverBg: '#000000bf',
+      },
+      dropShadow: {
+        custom: '0px 3px 6px rgba(255, 102, 0, 0.77)',
       },
       fontFamily: {
         heading: ['Playfair Display'],
@@ -37,6 +47,9 @@ const config: Config = {
       maxWidth: {
         bigCard: '1000px',
         smallCard: '480px',
+        bigCardLargeView: '620px',
+        smallCardLargeView: '290px',
+        line: '1400px',
       },
       height: {
         bg: '700px',
